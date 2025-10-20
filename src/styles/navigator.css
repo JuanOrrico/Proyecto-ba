@@ -1,0 +1,42 @@
+.nav{
+    background-color: #c40a0aff;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:10vh;
+    gap: 15px;
+    width:100%;
+    
+     
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+   
+ 
+
+}
+
+.login{
+    margin-right: 20px;
+}
+nav a:hover {
+    color: #f86401ff
+}
+
+
+
+
+
+
+@media (max-width: 500px){
+
+    nav{
+        
+        
+        font-size: 0.8em;
+        color: white;
+    }
+}

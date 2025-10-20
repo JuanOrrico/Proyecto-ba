@@ -1,0 +1,39 @@
+header{
+    background-color: #c40a0aff;
+    display:flex;
+    justify-content:center;
+    height:20vh;
+    position: relative;
+    z-index:-1;
+    width: 100%;
+}
+
+.banner-header{
+    width: 100%;
+    max-height:23vh;
+    position:absolute;
+    z-index:-2;
+    object-fit:cover;
+}
+
+h1{
+    color: white;
+    display:flex;
+    align-self:center
+}
+
+@media (max-width: 650px){
+
+    header{
+        height: 10vh;
+        width: 100%;
+    }
+
+    .banner-header {
+            max-height: 10vh;
+        }
+
+    h1{
+        font-size: 0.8em;
+    }
+}
