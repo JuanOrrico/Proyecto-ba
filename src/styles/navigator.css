@@ -1,20 +1,19 @@
 .nav{
-    background-color: #c40a0aff;
     display:flex;
+    background-color: rgba(248, 1, 1, 0.418);
+    width: 100%;
     justify-content: flex-end;
-    align-items: center;
-    height:10vh;
-    gap: 15px;
-    width:100%;
+    height: 10vh;
+   
     
      
 }
 
 nav a {
     text-decoration: none;
-    color: white;
-    align-items: center;
-   
+    color:white;
+    display: flex;
+    gap:20px;
  
 
 }
@@ -29,14 +28,13 @@ nav a:hover {
 
 
 
-
-
-@media (max-width: 500px){
-
-    nav{
+@media(max-width:1200px){
+    .nav{
         
-        
-        font-size: 0.8em;
-        color: white;
+        position: absolute;
     }
+}
+
+@media (max-width: 540px){
+
 }

@@ -17,14 +17,14 @@ export default function Navigation(){
 
 return(
    
-    <Navbar expand="lg" className="me-auto">
+    <Navbar expand="xl" className="nav"  id="navbarToggleExternalContent">
         <Navbar.Toggle/>
         <Navbar.Collapse>
-            <Nav className="nav">
+            <Nav >
             <Link to="/" >Inicio</Link>
             <Link to="/productos">Productos</Link>
             <Link to="/about">Contactanos</Link> 
-            <Link to="/carro"><Carrito/></Link>
+            
             {
             isAuth && (
             <>
@@ -41,9 +41,12 @@ return(
             } 
         
           </Nav>
-
+            
 
         </Navbar.Collapse>
+        <Nav>
+            <Link to="/carro"><Carrito/></Link>
+        </Nav>
         
      
         
