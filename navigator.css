@@ -1,0 +1,40 @@
+.nav{
+    display:flex;
+    background-color: rgba(248, 1, 1, 0.418);
+    width: 100%;
+    justify-content: flex-end;
+    height: 10vh;
+   
+    
+     
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+    display: flex;
+    gap:20px;
+ 
+
+}
+
+.login{
+    margin-right: 20px;
+}
+nav a:hover {
+    color: #f86401ff
+}
+
+
+
+
+@media(max-width:1200px){
+    .nav{
+        
+        position: absolute;
+    }
+}
+
+@media (max-width: 540px){
+
+}
