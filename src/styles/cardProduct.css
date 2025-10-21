@@ -4,7 +4,7 @@
     align-items:stretch;
     flex-wrap:wrap;
     gap:20px;
-    margin: 50px 250px 50px 250px;
+    margin: 50px 250px 150px 250px;
     color:#fff;
 
 }
@@ -34,46 +34,89 @@
    padding:5px;
    margin-top:auto;
    border-radius:10px;
-   border-color:#555;
+   border-color:#eeeaea;
    color: white;
         
 }
 
     
-@media (max-width: 900px) {
+@media(max-width: 1440px){
 
-    .section-card-prod {
-        margin: 50px 50px 50px 50px;
-        font-size: 0.5em;
+
+    .section-card-prod{
+        flex-direction: row;
     }
-    .img-card{
-        width: 100%;
+
+    .container-card{
+        flex-direction: row;
+        min-width: 800px;
+        flex-basis: calc(70%, 20px);
     }
 
     .p-desc{
-        font-size: 0.9em;
+        min-height: 50px;
     }
+
+   
 
     .h3-card{
-        font-size: 0.9em;
+        font-size: medium;
+       
     }
 
-    .h2-prod{
-        font-size: 1.2em;
-      
+    .btn-add{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        width: 15%;
+        height: 50px;
+        padding: 10px;
     }
+
+}
+
+@media (max-width: 768px) {
+
+    .section-card-prod {
+        justify-content: center;
+        margin: 50px 50px 50px 50px;
+        font-size: 0.5em;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .container-card{
+        flex-direction: column;
+        min-width: 150px;
+        flex-basis: calc(25%, 15px);
+    }
+    .img-card{
+        width: 100%;
+       
+    }
+
+        .p-desc {
+            font-size: 1.6em;
+        }
+    
+        .h3-card {
+            font-size: 1.8em;
+        }
+    
+        .h2-prod {
+            font-size: 1.5em;
+    
+        }
+    
+        .p-price {
+            font-size: 1.6em;
+    
+        }
+    
+        .btn-add {
+            font-size: 1.4em;
+            width: 70%;
+        }
 }
        
 
-@media(max-width:500px){
-
-    .section-card-prod{
-        align-items: center;
-    }
-    .btn-add{
-        
-        font-size: 0.5em;
-        
-        
-    }
-}

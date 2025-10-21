@@ -25,10 +25,12 @@
     
    
 }
-@media (max-width: 9000px){
 
-    .img-carrito{
-        width: 30px;
+
+
+@media(max-width: 660px){
+
+    .btn-carrito{
+        right: -40px
     }
-
 }

@@ -1,42 +1,51 @@
 .nav{
-    background-color: #c40a0aff;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    height:10vh;
-    gap: 15px;
-    width:100%;
-    
-     
+    position: sticky;
+    height: 8vh;
+    color:white;
+
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    align-items: center;
-   
+.nav a {
+
+    color:white;
+    display: flex;
+    gap:20px;
  
 
 }
 
-.login{
-    margin-right: 20px;
-}
-nav a:hover {
-    color: #f86401ff
-}
 
 
 
 
-
-
-@media (max-width: 500px){
-
-    nav{
+@media(max-width:1024px){
+    .nav{
         
-        
-        font-size: 0.8em;
-        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+    .nav a{
+        color:white;
+        
+      
+        
+
+    }
+}
+
+@media (max-width: 540px){
+  
+    .nav{
+        margin: 0;
+        gap:0
+    }
+    .nav a {
+
+            width: 100%;
+            font-size: 1.6em;
+    
+        }
 }

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { Spinner } from "react-bootstrap";
 
 import "../styles/cardProduct.css"
+
+
 export default function CardProducts(){
 
 const [data, setData] = useState([])
@@ -31,7 +33,7 @@ return(
             <div key={prod.id} className="container-card" >
                 <img src={prod.image} alt={prod.title} style={{height:"100px",objectFit:"contain", alignItems:"center"}} className="img-card" />
                 <h3 className="h3-card">{prod.title}</h3>   
-                <p>${prod.price}.-</p>
+                <p className="p-price">${prod.price}.-</p>
                 <p style={{minHeight:"80px", overflow:"hidden", textOverflow: "ellipsis", 
                 display: "-webkit-box",
                 WebkitLineClamp: 4,

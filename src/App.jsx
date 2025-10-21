@@ -30,7 +30,8 @@ function App() {
               <Route path="/login" element={<Login/>}/>
               <Route path="/admin" element={<RutaProtegida><Administrator/></RutaProtegida>}/>
               <Route path="/perfil/:id" element={<RutaProtegida><Perfil/></RutaProtegida>}/>
-              <Route path="/notfound" element={<NotFound/>}/>        
+              <Route path="/notfound" element={<NotFound/>}/>      
+              
             </Routes>  
           </main>
              <Footer/>  

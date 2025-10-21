@@ -1,6 +1,7 @@
 import {Link, useNavigate} from "react-router-dom"
-import {Navbar, Nav} from "react-bootstrap"
+import {Navbar, Nav, Button} from "react-bootstrap"
 import Carrito from "./Carrito"
+
 
 import "../styles/navigator.css"
 
@@ -17,33 +18,39 @@ export default function Navigation(){
 
 return(
    
-    <Navbar expand="lg" className="me-auto">
+    <Navbar expand="lg" className="nav" fixed="top"  id="navbarToggleExternalContent">
         <Navbar.Toggle/>
         <Navbar.Collapse>
-            <Nav className="nav">
-            <Link to="/" >Inicio</Link>
-            <Link to="/productos">Productos</Link>
-            <Link to="/about">Contactanos</Link> 
-            <Link to="/carro"><Carrito/></Link>
+            <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
+            <Nav.Link as={Link} to="/about">Contacto</Nav.Link>
+            
+            
             {
             isAuth && (
             <>
-                <Link to="/admin">Administrador</Link>
-                <Link to="/perfil">Mi Perfil</Link>
+                <Nav.Link as={Link} to="/admin">Administrador</Nav.Link>
+                <Nav.Link as={Link} to="/perfil">Mi Perfil</Nav.Link>
+            
              </>
             )
              }
              {
             !isAuth ?
-             ( <Link to="/login" className="login">Login</Link>) : 
+            
+             ( <Nav.Link as={Link} to="/login">Login</Nav.Link>) : 
             ( <button onClick={cerrarSesion}>Cerrar Sesion</button>)
 
             } 
         
           </Nav>
-
+            
 
         </Navbar.Collapse>
+        <Nav>
+            <Nav.Link as={Link} to="/carro"><Carrito/></Nav.Link> 
+        </Nav>
         
      
         
