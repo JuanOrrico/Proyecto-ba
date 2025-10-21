@@ -43,6 +43,7 @@ footer{
     .img-footer{
         max-height: 8vh;
     }
+<<<<<<< HEAD
 }
 
 @media(max-width:320px) {
@@ -62,4 +63,6 @@ footer{
     }
     
 
+=======
+>>>>>>> 15969e10d821a5f61300de3e330b8298f0a9760f
 }
