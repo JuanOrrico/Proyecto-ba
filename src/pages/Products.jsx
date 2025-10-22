@@ -1,4 +1,4 @@
-import CardProducts from "../components/CardProducts"
+import ProductList from "../components/ProductList"
 
 
 export default function Products(){
@@ -6,7 +6,7 @@ export default function Products(){
 
 return(
 
-        <CardProducts/>
+        <ProductList/>
    
 )
 

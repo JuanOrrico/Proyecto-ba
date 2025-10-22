@@ -1,3 +1,4 @@
+import Mostrador from "../components/Mostrador";
 
 
 
@@ -6,7 +7,7 @@ export default function Home(){
 
 return(
     
-    <h2>Home</h2>
+    <Mostrador/>
   
 )
 
